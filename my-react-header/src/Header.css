@@ -1,0 +1,120 @@
+/* src/Header.css */
+
+.header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f0f4ff; /* Light blue from the image */
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.header-brand-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  transition: border-bottom-color 0.3s;
+}
+
+.brand-link.active {
+  color: #004d99; /* A darker blue */
+  border-bottom: 2px solid #004d99;
+}
+
+.header-account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-pricing {
+  text-decoration: none;
+  color: #004d99;
+  font-weight: 600;
+}
+
+.user-icon {
+  background-color: #004d99;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bottom Header Section */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #004d99;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-text {
+  font-weight: 600;
+}
+
+.header-nav {
+  /* Using flexbox for navigation */
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap; /* Prevents wrapping on multiple lines */
+}
+
+.pill {
+  background-color: #4CAF50; /* Green color for the pills */
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+  transform: scale(0.8);
+  display: inline-block;
+  color: #999;
+}
